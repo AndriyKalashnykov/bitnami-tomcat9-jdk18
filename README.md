@@ -13,13 +13,13 @@ cd 9.0/debian-10
 
 JDK 1.8 instead of JDK 11.0.6-0
 
-Edit `bitnami-docker-tomcat/9.0/debian-10/Dockerfile`, comment out `JDK 11.0.6-0`
+Edit `Dockerfile`, comment out `JDK 11.0.6-0`
 and add alternative `JDK 1.8.242-0`
 
 ```Dockerfile
 FROM docker.io/bitnami/minideb:buster
-LABEL maintainer "Andriy Kalashnykov <akalashnykov@vmware.com>"
 
+RUN . /opt/bitnami/scripts/libcomponent.sh && component_unpack "tomcat" "9.0.34-0" --checksum 3265bbbb076d08066f7bd5ae0bcbffb5c98b7b78aca857d98f2044f2e900b456
 # RUN . /opt/bitnami/scripts/libcomponent.sh && component_unpack "java" "11.0.6-0" --checksum f7446f8bec72b6b2606d37ba917accc243e6cd4e722700c39ef83832c46fb0c6
 RUN . /opt/bitnami/scripts/libcomponent.sh && component_unpack "java" "1.8.242-0" --checksum 3a70f3d1c3cd9bc6ec581b2a10373a2b323c0b9af40402ce8d19aeb0b3d02400
 ```
