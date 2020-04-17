@@ -1,6 +1,16 @@
-# Customizing Bitnami Tomcat Docker image
+# Customized Bitnami Tomcat Docker image
 
-## Clone Bitnami Tomcat repo -  9.0.34-debian-10-r4 release
+* Based of **Bitnami Tomcat 9.0/debian-10 .0.34-debian-10-r4**
+* Added **JDK 1.8.242-0** instead of **JDK 11.0.6-0**
+* Added management roles
+  * admin-script
+  * manager-script
+  * manager-jmx
+  * manager-status
+* Added **TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP** to allow any connection from any IP
+
+
+#### Clone Bitnami Tomcat repo -  9.0.34-debian-10-r4 release
 
 ```bash
 git clone git@github.com:bitnami/bitnami-docker-tomcat.git
@@ -9,7 +19,7 @@ git checkout 8ee5c7c32ad71bc6287c68b304743f2c84964198
 cd 9.0/debian-10
 ```
 
-## Customize JDK version
+#### Customize JDK version
 
 JDK 1.8 instead of JDK 11.0.6-0
 
@@ -30,7 +40,7 @@ Previous command downloads
 
 It also downloads [java-1.8.242-0-linux-amd64-debian-10.tar.gz](https://downloads.bitnami.com/files/stacksmith/java-1.8.242-0-linux-amd64-debian-10.tar.gz)
 
-## Add Tomcat management roles to allow CLI operations
+#### Add Tomcat management roles
 
 Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`, add
 additional roles: `admin-script`,`manager-script`,`manager-jmx`,`manager-status`
@@ -46,7 +56,7 @@ tomcat_create_tomcat_user() {
 }
 ```
 
-## Allow management operations from any IP address
+#### Allow management operations from any IP address
 
 Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`, add `export TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP="${TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP:-0}"`
 
@@ -76,6 +86,6 @@ tomcat_enable_remote_management() {
 }
 ```
 
-## Links
+#### Links
 
-[Bitnami Tomcat](https://github.com/bitnami/bitnami-docker-tomcat/tree/master/9.0/debian-10)
+[Bitnami Tomcat 9.0/debian-10](https://github.com/bitnami/bitnami-docker-tomcat/tree/master/9.0/debian-10)
