@@ -1,6 +1,6 @@
 # Customized Bitnami Tomcat Docker image
 
-* Based of **Bitnami Tomcat 9.0/debian-10 .0.34-debian-10-r4**
+* Based of **Bitnami Tomcat 9.0/debian-10.0.34-debian-10-r4**
 * Added **JDK 1.8.242-0** instead of **JDK 11.0.6-0**
 * Added management roles
   * admin-script
@@ -9,6 +9,7 @@
   * manager-status
 * Added **TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP** to allow any connection from any IP
 
+## Customizations 
 
 #### Clone Bitnami Tomcat repo -  9.0.34-debian-10-r4 release
 
@@ -18,6 +19,7 @@ cd bitnami-docker-tomcat
 git checkout 8ee5c7c32ad71bc6287c68b304743f2c84964198
 cd 9.0/debian-10
 ```
+
 
 #### Customize JDK version
 
