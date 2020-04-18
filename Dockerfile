@@ -2,7 +2,7 @@ FROM docker.io/bitnami/minideb:buster
 
 LABEL Name="bitnami-tomcat9-jdk18" \
     Vendor="com.andriykalashnykov" \
-    Maintainer="Andriy Kalashnykov <akalashnykov@vmware.com> (https://github.com/AndriyKalashnykov/)" \
+    Maintainer="Andriy Kalashnykov (https://github.com/AndriyKalashnykov/)" \
     Version="1.0" \
     License="Apache License, Version 2.0"
 
