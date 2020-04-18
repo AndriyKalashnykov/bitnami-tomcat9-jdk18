@@ -1,0 +1,13 @@
+sudo: required
+dist: trusty
+services:
+- docker
+language: node_js
+node_js:
+- "node"
+install:
+- npm install -g dockerfile_lint
+before_script:
+- dockerfile_lint -f Dockerfile
+script:
+- docker build --tag andriykalashnykov/ bitnami-tomcat9-jdk18:latest .
