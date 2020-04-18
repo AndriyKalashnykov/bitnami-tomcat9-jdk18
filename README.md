@@ -77,7 +77,7 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 * add `TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP`
 </br>
 
-    ```shell
+```shell
     # removed for brevity
 
     tomcat_env() {
@@ -90,7 +90,7 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
     }
 
     # removed for brevity
-    ```
+```
 
 * add the condition
 </br>
