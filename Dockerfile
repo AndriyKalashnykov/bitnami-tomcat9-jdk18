@@ -1,5 +1,9 @@
 FROM docker.io/bitnami/minideb:buster
-LABEL maintainer "Andriy Kalashnykov <akalashnykov@vmware.com>"
+
+LABEL Name="bitnami-tomcat9-jdk18" \
+    Vendor="com.garethahealy" \
+    Maintainer="Andriy Kalashnykov <akalashnykov@vmware.com> (https://github.com/AndriyKalashnykov/)" \
+    Version="1.0"
 
 ENV HOME="/" \
     OS_ARCH="amd64" \
