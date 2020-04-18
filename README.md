@@ -2,7 +2,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/andriykalashnykov/bitnami-tomcat9-jdk18.svg)](https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18/)
 [![License](https://img.shields.io/hexpm/l/plug.svg?maxAge=2592000)]()
 
-# Customized Bitnami Tomcat
+# Customized Bitnami Tomcat 9
 
 * Based of **[Bitnami Tomcat 9.0/debian-10]** **debian-10.0.34-debian-10-r4**
 * Added **JDK 1.8.242-0** instead of **JDK 11.0.6-0**
