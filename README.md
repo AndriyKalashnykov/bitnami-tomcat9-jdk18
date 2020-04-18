@@ -47,13 +47,10 @@ JDK package location: [java-1.8.242-0-linux-amd64-debian-10.tar.gz](https://down
 Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 
 * add roles:
-
-</br>
   * `admin-script`
   * `manager-script`
   * `manager-jmx`
   * `manager-status`
-</br>
 
 ```shell
 
