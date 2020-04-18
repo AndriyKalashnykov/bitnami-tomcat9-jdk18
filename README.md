@@ -126,6 +126,7 @@ docker run --name t9 -d ${DOCKER_LOGIN}/${IMAGE_NAME}:${IMAGE_VER}
 docker exec -it t9 bash
 
 $ cat /opt/bitnami/tomcat/logs/catalina.*.log | grep APR
+$ curl -s http://localhost:8080/
 $ exit
 
 docker stop t9
