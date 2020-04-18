@@ -28,9 +28,6 @@ ENV BITNAMI_APP_NAME="tomcat" \
     BITNAMI_IMAGE_VERSION="9.0.34-debian-10-r0" \
     PATH="/opt/bitnami/java/bin:/opt/bitnami/tomcat/bin:/opt/bitnami/common/bin:$PATH"
 
-# RUN mkdir -p /usr/share/tomcat/logs
-# RUN chown 1001:1001 -R /usr/share/tomcat/logs
-
 EXPOSE 8080
 
 USER 1001

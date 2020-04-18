@@ -118,6 +118,19 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
     # removed for brevity
 ```
 
+### Run image locally
+
+```bash
+docker login
+docker run --name t9 -d ${DOCKER_LOGIN}/${IMAGE_NAME}:${IMAGE_VER}
+docker exec -it t9 bash
+
+$ cat /opt/bitnami/tomcat/logs/catalina.*.log | grep APR
+$ exit
+
+docker stop t9
+```
+
 ### Links
 
 * [Bitnami Tomcat 9.0/debian-10]
