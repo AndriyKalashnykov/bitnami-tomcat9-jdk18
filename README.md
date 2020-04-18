@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/AndriyKalashnykov/bitnami-tomcat9-jdk18.svg?branch=master)](https://travis-ci.org/AndriyKalashnykov/bitnami-tomcat9-jdk18)
 [![Docker Pulls](https://img.shields.io/docker/pulls/andriykalashnykov/bitnami-tomcat9-jdk18.svg)](https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18/)
 
-# Customized Bitnami Tomcat Docker image
+# Customized Bitnami Tomcat
 
 * Based of **[Bitnami Tomcat 9.0/debian-10]** **debian-10.0.34-debian-10-r4**
 * Added **JDK 1.8.242-0** instead of **JDK 11.0.6-0**
