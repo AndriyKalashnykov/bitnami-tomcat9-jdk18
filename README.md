@@ -122,7 +122,7 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 
 ```bash
 docker login
-docker run --name t9 -d ${DOCKER_LOGIN}/${IMAGE_NAME}:${IMAGE_VER}
+docker run --name t9 -d andriykalashnykov/bitnami-tomcat9-jdk18:latest
 docker exec -it t9 bash
 
 $ cat /opt/bitnami/tomcat/logs/catalina.*.log | grep APR
