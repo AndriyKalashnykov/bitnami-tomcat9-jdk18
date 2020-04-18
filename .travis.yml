@@ -10,4 +10,4 @@ install:
 before_script:
 - dockerfile_lint -f Dockerfile
 script:
-- docker build --tag andriykalashnykov/ bitnami-tomcat9-jdk18:latest .
+- docker build --tag andriykalashnykov/bitnami-tomcat9-jdk18:latest .
