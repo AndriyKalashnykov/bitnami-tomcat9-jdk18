@@ -7,7 +7,10 @@
   * manager-script
   * manager-jmx
   * manager-status
-* Added **TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP** to allow any connection from any IP
+* Added **TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP** to [Environment variables].
+  Allow to connect to manager applications from **ANY** remote IP addresse. Valid
+  values are 0 and 1. Default: 0
+
 
 ## Customizations
 
@@ -115,5 +118,10 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 ### Links
 
 [Bitnami Tomcat 9.0/debian-10]
+[Bitnami Tomcat]
+
+[Bitnami Tomcat]: https://github.com/bitnami/bitnami-docker-tomcat
 
 [Bitnami Tomcat 9.0/debian-10]: https://github.com/bitnami/bitnami-docker-tomcat/tree/master/9.0/debian-10
+
+[Environment variables]: https://github.com/bitnami/bitnami-docker-tomcat#environment-variables
