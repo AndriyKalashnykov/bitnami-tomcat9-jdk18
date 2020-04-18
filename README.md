@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/andriykalashnykov/bitnami-tomcat9-jdk18?branch=master)](https://travis-ci.org/andriykalashnykov/bitnami-tomcat9-jdk18/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/andriykalashnykov/bitnami-tomcat9-jdk18.svg)](https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18/)
 
 # Customized Bitnami Tomcat Docker image
