@@ -119,6 +119,7 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 ### Links
 
 [Bitnami Tomcat 9.0/debian-10]
+
 [Bitnami Tomcat]
 
 [Bitnami Tomcat]: https://github.com/bitnami/bitnami-docker-tomcat
