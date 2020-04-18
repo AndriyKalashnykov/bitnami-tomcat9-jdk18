@@ -29,7 +29,7 @@ Edit `Dockerfile`
 * replace `JDK 11.0.6-0` with `JDK 1.8.242-0`
 </br>
 
-    ```Dockerfile
+```Dockerfile
     FROM docker.io/bitnami/minideb:buster
 
     # removed for brevity
@@ -38,7 +38,7 @@ Edit `Dockerfile`
     RUN . /opt/bitnami/scripts/libcomponent.sh && component_unpack "java" "1.8.242-0" --checksum 3a70f3d1c3cd9bc6ec581b2a10373a2b323c0b9af40402ce8d19aeb0b3d02400
 
     # removed for brevity
-    ```
+```
 
 JDK package location: [java-1.8.242-0-linux-amd64-debian-10.tar.gz](https://downloads.bitnami.com/files/stacksmith/java-1.8.242-0-linux-amd64-debian-10.tar.gz)
 
@@ -54,7 +54,7 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
   * `manager-status`
 </br>
 
-    ```shell
+```shell
 
     # removed for brevity
 
@@ -68,7 +68,7 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
     }
 
     # removed for brevity
-    ```
+```
 
 ### Allow management operations from any IP address
 
@@ -95,7 +95,7 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 * add the condition
 </br>
 
-    ```shell
+```shell
     # removed for brevity
 
     tomcat_enable_remote_management() {
@@ -112,7 +112,7 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
     }
 
     # removed for brevity
-    ```
+```
 
 ### Links
 
