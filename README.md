@@ -33,7 +33,6 @@ Install JDK 1.8 instead of JDK 11.0.6-0
 Edit `Dockerfile`
 
 * [replace `JDK 11.0.6-0` with `JDK 1.8.242-0`]
-</br>
 
 ```Dockerfile
     FROM docker.io/bitnami/minideb:buster
@@ -52,7 +51,7 @@ JDK package location: [java-1.8.242-0-linux-amd64-debian-10.tar.gz](https://down
 
 Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 
-* add [Tomcat Host Manager and Manager Roles]:</br></br>
+* add [Tomcat Host Manager and Manager Roles]:
   * `admin-script`
   * `manager-script`
   * `manager-jmx`
@@ -79,7 +78,6 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 
 * [define TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]
-</br>
 
 ```shell
     # removed for brevity
@@ -97,7 +95,6 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 ```
 
 * [add condition TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]
-</br>
 
 ```shell
     # removed for brevity
