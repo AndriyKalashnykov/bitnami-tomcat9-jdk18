@@ -117,6 +117,9 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 
     # removed for brevity
 ```
+### bitnami-tomcat9-jdk18 published on DockerHub
+
+* [bitnami-tomcat9-jdk18 on DockerHub]
 
 ### Run image
 
@@ -162,3 +165,5 @@ docker stop t9
 [define TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/fc9cfc96e3ff1fbfceb4f48bbfb0a7995b1dc8c4/rootfs/opt/bitnami/scripts/libtomcat.sh#L58
 
 [add condition TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/fc9cfc96e3ff1fbfceb4f48bbfb0a7995b1dc8c4/rootfs/opt/bitnami/scripts/libtomcat.sh#L209
+
+[bitnami-tomcat9-jdk18 on DockerHub]: https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18
