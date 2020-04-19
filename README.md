@@ -122,7 +122,7 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 
 ```bash
 docker login
-docker run --name t9 -d --rm andriykalashnykov/bitnami-tomcat9-jdk18:latest
+docker run --name t9 -d --rm -p 8080:8080 -p 8443:8443 andriykalashnykov/bitnami-tomcat9-jdk18:latest
 ```
 
 ### Test image
