@@ -118,17 +118,25 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
     # removed for brevity
 ```
 
-### Run image locally
+### Run image
 
 ```bash
 docker login
-docker run --name t9 -d andriykalashnykov/bitnami-tomcat9-jdk18:latest
-docker exec -it t9 bash
+docker run --name t9 -d --rm andriykalashnykov/bitnami-tomcat9-jdk18:latest
+```
 
-$ cat /opt/bitnami/tomcat/logs/catalina.*.log | grep APR
-$ curl -s http://localhost:8080/
-$ exit
+### Test image
 
+```bash
+docker exec -t t9 sh -c "cat /opt/bitnami/tomcat/conf/server.xml"
+docker exec -t t9 sh -c "cat /opt/bitnami/tomcat/logs/catalina.*.log | grep 'APR'"
+docker exec -t t9 sh -c "cat /opt/bitnami/tomcat/conf/tomcat-users.xml | grep 'admin-script'"
+docker exec -t t9 sh -c "curl http://localhost:8080/"
+```
+
+### Stop image
+
+```bash
 docker stop t9
 ```
 
