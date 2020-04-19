@@ -6,12 +6,12 @@
 
 * Based of **[Bitnami Tomcat 9.0/debian-10]** **debian-10.0.34-debian-10-r4**
 * Added **JDK 1.8.242-0** instead of **JDK 11.0.6-0**
-* Added management roles
+* Added [Tomcat Management Roles]
   * admin-script
   * manager-script
   * manager-jmx
   * manager-status
-* Added **TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP** to [Environment variables].
+* Added [TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP] to [Environment variables].
   Allow to connect to manager applications from **ANY** remote IP addresse. Valid
   values are 0 and 1. Default: 0
 
@@ -52,7 +52,7 @@ JDK package location: [java-1.8.242-0-linux-amd64-debian-10.tar.gz](https://down
 
 Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 
-* add roles:</br></br>
+* add [Tomcat Management Roles]:</br></br>
   * `admin-script`
   * `manager-script`
   * `manager-jmx`
@@ -78,7 +78,7 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 
 Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 
-* add `TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP`
+* [define TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]
 </br>
 
 ```shell
@@ -96,7 +96,7 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
     # removed for brevity
 ```
 
-* add the condition
+* add the condition [TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]
 </br>
 
 ```shell
@@ -150,3 +150,9 @@ docker stop t9
 [Bitnami Tomcat 9.0/debian-10]: https://github.com/bitnami/bitnami-docker-tomcat/tree/master/9.0/debian-10
 
 [Environment variables]: https://github.com/bitnami/bitnami-docker-tomcat#environment-variables
+
+[Tomcat Management Roles]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/fc9cfc96e3ff1fbfceb4f48bbfb0a7995b1dc8c4/rootfs/opt/bitnami/scripts/libtomcat.sh#L233
+
+[define TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/fc9cfc96e3ff1fbfceb4f48bbfb0a7995b1dc8c4/rootfs/opt/bitnami/scripts/libtomcat.sh#L58
+
+[TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/fc9cfc96e3ff1fbfceb4f48bbfb0a7995b1dc8c4/rootfs/opt/bitnami/scripts/libtomcat.sh#L209
