@@ -6,7 +6,7 @@
 
 * Based of **[Bitnami Tomcat 9.0/debian-10]** **debian-10.0.34-debian-10-r4**
 * Added **JDK 1.8.242-0** instead of **JDK 11.0.6-0**
-* Added [Tomcat Management Roles]
+* Added [Host Manager Roles] and [Manager Roles]
   * admin-script
   * manager-script
   * manager-jmx
@@ -32,7 +32,7 @@ Install JDK 1.8 instead of JDK 11.0.6-0
 
 Edit `Dockerfile`
 
-* [replace `JDK 11.0.6-0` with `JDK 1.8.242-0`']
+* [replace `JDK 11.0.6-0` with `JDK 1.8.242-0`]
 </br>
 
 ```Dockerfile
@@ -52,7 +52,7 @@ JDK package location: [java-1.8.242-0-linux-amd64-debian-10.tar.gz](https://down
 
 Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
 
-* add [Tomcat Management Roles]:</br></br>
+* add [Tomcat Host Manager and Manager Roles]:</br></br>
   * `admin-script`
   * `manager-script`
   * `manager-jmx`
@@ -151,9 +151,13 @@ docker stop t9
 
 [Environment variables]: https://github.com/bitnami/bitnami-docker-tomcat#environment-variables
 
-[replace `JDK 11.0.6-0` with `JDK 1.8.242-0`']: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/eca48b599978add685d52721e3306bad2043eea4/Dockerfile#L17
+[Host Manager Roles]: http://tomcat.apache.org/tomcat-9.0-doc/host-manager-howto.html#Configuring_Manager_Application_Access
 
-[Tomcat Management Roles]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/fc9cfc96e3ff1fbfceb4f48bbfb0a7995b1dc8c4/rootfs/opt/bitnami/scripts/libtomcat.sh#L233
+[Manager Roles]: https://tomcat.apache.org/tomcat-9.0-doc/manager-howto.html#Configuring_Manager_Application_Access
+
+[replace `JDK 11.0.6-0` with `JDK 1.8.242-0`]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/eca48b599978add685d52721e3306bad2043eea4/Dockerfile#L17
+
+[Tomcat Host Manager and Manager Roles]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/fc9cfc96e3ff1fbfceb4f48bbfb0a7995b1dc8c4/rootfs/opt/bitnami/scripts/libtomcat.sh#L233
 
 [define TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/fc9cfc96e3ff1fbfceb4f48bbfb0a7995b1dc8c4/rootfs/opt/bitnami/scripts/libtomcat.sh#L58
 
