@@ -11,7 +11,7 @@
   * manager-script
   * manager-jmx
   * manager-status
-* Added [TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP] to [Environment variables].
+* Added TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP to [Environment variables].
   Allow to connect to manager applications from **ANY** remote IP addresse. Valid
   values are 0 and 1. Default: 0
 
@@ -32,7 +32,7 @@ Install JDK 1.8 instead of JDK 11.0.6-0
 
 Edit `Dockerfile`
 
-* replace `JDK 11.0.6-0` with `JDK 1.8.242-0`
+* [replace `JDK 11.0.6-0` with `JDK 1.8.242-0`']
 </br>
 
 ```Dockerfile
@@ -96,7 +96,7 @@ Edit `bitnami-docker-tomcat/rootfs/opt/bitnami/scripts/libtomcat.sh`
     # removed for brevity
 ```
 
-* add the condition [TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]
+* [add condition TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]
 </br>
 
 ```shell
@@ -151,8 +151,10 @@ docker stop t9
 
 [Environment variables]: https://github.com/bitnami/bitnami-docker-tomcat#environment-variables
 
+[replace `JDK 11.0.6-0` with `JDK 1.8.242-0`']: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/eca48b599978add685d52721e3306bad2043eea4/Dockerfile#L17
+
 [Tomcat Management Roles]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/fc9cfc96e3ff1fbfceb4f48bbfb0a7995b1dc8c4/rootfs/opt/bitnami/scripts/libtomcat.sh#L233
 
 [define TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/fc9cfc96e3ff1fbfceb4f48bbfb0a7995b1dc8c4/rootfs/opt/bitnami/scripts/libtomcat.sh#L58
 
-[TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/fc9cfc96e3ff1fbfceb4f48bbfb0a7995b1dc8c4/rootfs/opt/bitnami/scripts/libtomcat.sh#L209
+[add condition TOMCAT_ALLOW_REMOTE_MANAGEMENT_ANY_IP]: https://github.com/AndriyKalashnykov/bitnami-tomcat9-jdk18/blob/fc9cfc96e3ff1fbfceb4f48bbfb0a7995b1dc8c4/rootfs/opt/bitnami/scripts/libtomcat.sh#L209
