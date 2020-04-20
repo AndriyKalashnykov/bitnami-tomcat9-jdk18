@@ -30,6 +30,8 @@ ENV BITNAMI_APP_NAME="tomcat" \
 
 EXPOSE 8080
 
+RUN chown -R 1001:1001 /opt/bitnami/tomcat
+
 USER 1001
 
 ENTRYPOINT [ "/opt/bitnami/scripts/tomcat/entrypoint.sh" ]
