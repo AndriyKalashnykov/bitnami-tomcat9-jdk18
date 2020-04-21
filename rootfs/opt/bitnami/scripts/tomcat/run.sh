@@ -16,6 +16,8 @@ eval "$(tomcat_env)"
 
 info "** Starting Tomcat **"
 
+sleep 5
+
 start_command=("${TOMCAT_BIN_DIR}/catalina.sh" "run")
 
 if am_i_root; then
