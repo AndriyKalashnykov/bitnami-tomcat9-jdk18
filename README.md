@@ -1,8 +1,7 @@
 [![Build Status](https://travis-ci.org/AndriyKalashnykov/bitnami-tomcat9-jdk18.svg?branch=master)](https://travis-ci.org/AndriyKalashnykov/bitnami-tomcat9-jdk18)
 [![Docker Pulls](https://img.shields.io/docker/pulls/andriykalashnykov/bitnami-tomcat9-jdk18.svg)](https://hub.docker.com/r/andriykalashnykov/bitnami-tomcat9-jdk18/)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FAndriyKalashnykov%2Fbitnami-tomcat9-jdk18&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-# Customized Bitnami Tomcat 9
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)# Customized Bitnami Tomcat 9
 
 * Based of **[Bitnami Tomcat 9.0/debian-10]** **debian-10.0.34-debian-10-r4**
 * Added **JDK 1.8.242-0** instead of **JDK 11.0.6-0**
